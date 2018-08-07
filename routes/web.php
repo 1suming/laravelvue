@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/post','WordPress\PostController@index');
+Route::get('/user', 'WordPress\UserController@index');
+Route::get('/comment', 'WordPress\CommentController@index');
